@@ -4,7 +4,7 @@
    - Capturar um elemento por sua classe: .nome-da-classe ex: querySelector('.exemplo')
    - Capturar um elemento por seu id: #nome-do-id ex: querySelector('#exemplo')
    - Capturar um elemento por seu atributo: [atributo=valor] ex: querySelector('[type="submit"]')
-   - Capturar um elemento por seu tipo: input, button, div, span, etc. ex: querySelector('button')
+   - Capturar um elemento por seu tipo (tag): input, button, div, span, etc. ex: querySelector('button')
 
    Perceba que o queryselector respeita as mesmas regras de seleção de elementos do CSS.
    https://www.w3schools.com/js/js_htmldom_document.asp
@@ -36,6 +36,7 @@ btn.addEventListener("click", () => {
 - Capturar o elemento do HTML e trazer para o JS
 - Adicionar um evento de click para esse elemento
 - Alterar o texto do elemento quando o evento for acionado
+- Não tenha medo de ir no HTML e adicionar ID e CLASS nos elementos para poder capturar eles no JS
 
 Faça o restante dos exercicios nessa pagina, apenas vá escrevendo um embaixo do outro, eles não vão se misturar.
 */
