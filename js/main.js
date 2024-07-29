@@ -7,6 +7,8 @@
    - Capturar um elemento por seu tipo: input, button, div, span, etc. ex: querySelector('button')
 
    Perceba que o queryselector respeita as mesmas regras de seleção de elementos do CSS.
+   https://www.w3schools.com/js/js_htmldom_document.asp
+   https://webdesign.tutsplus.com/javascript-cheatsheet-event-listeners-and-dom-manipulation--cms-107006a
 
 Você também pode capturar elementos usando o querySelectorAll(), que retorna todos os elementos que correspondem a um ou mais seletores CSS especificados no argumento do método. Se não houver correspondência, o método retornará um NodeList vazio.
 Outra opção é usar o .getElementById(), que retorna uma referência ao elemento pelo ID do elemento. Se não houver correspondência, o método retornará null.
