@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Lição de casa: pesquisa sobre o significa dessas tags META e o que mais daria para colocar aqui como TAG -->
+      <!-- Limão de casa 2: Tentar trocar o favicon da pagina. -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Manipulação de DOM</title>
+      <!-- Linkar o seu arquivo de css -->
+      <link rel="stylesheet" href="./styles/style.css" />
+      <!-- Linkar seu arquivo js (pesquisar o porque de usar o atributo "defer" na tag de script) -->
+      <script src="./js/main.js" defer></script>
+   </head>
+   <body>
+      <div>
+         <h1 id="exemplo">Exemplo de manipulação de DOM</h1>
+         <button class="exemplo_button">Clique em mim</button>
+      </div>
+
+      <div>
+         <h1>Exercicio numero 1 - Iniciação de manipulação de DOM</h1>
+         <p>
+            Nesse exercicio você irá aprender a manipular o DOM, criando
+            elementos, adicionando elementos, removendo elementos e alterando
+            elementos.
+         </p>
+
+         <p>
+            Crie um botão que ao ser clicado mostra um alerta na tela dizendo:
+            <strong>Botão foi clicado</strong>
+         </p>
+         <p>
+            Dica: Adicione um addEventListener ao botão / Pesquise sobre a
+            função alert() para criar o alerta no navegador
+         </p>
+
+         <div id="exercicio1">
+            <!-- Escreva o exercicio aqui -->
+         </div>
+      </div>
+
+      <div>
+         <h1>Exercicio numero 2 - Iniciação de manipulação de DOM</h1>
+
+         <p>
+            Crie um botão que ao ser clicado cria um novo elemento
+            <strong>h1</strong> com o texto "Danyela Ramos" e adicione esse
+            elemento a div com o id de exercicío 2.
+         </p>
+         <p>
+            Dica: Adicione um addEventListener ao botão / Pesquise sobre a
+            função createElement() e appendChild() para criar e adicionar o
+            elemento ao body
+         </p>
+
+         <div id="exercicio2">
+            <!-- Escreva o exercicio aqui -->
+         </div>
+      </div>
+
+      <div>
+         <h1>Exercicio numero 3 - Iniciação de manipulação de DOM</h1>
+
+         <p>
+            Crie um botão que ao ser clicado altera o texto do elemento h3
+            dentro da div "exercicio3" para "Marilia Mendonça é Rainha".
+         </p>
+         <p>
+            Dica: Adicione um addEventListener ao botão / Pesquise sobre a
+            propriedade innerText para alterar o texto dentro do elemento h3
+         </p>
+
+         <div id="exercicio3">
+            <!-- Escreva o exercicio aqui -->
+            <h3>Saudade de quem?</h3>
+         </div>
+      </div>
+
+      <div>
+         <p>Crie um botão que retira o ultima item da lista de nomes abaixo</p>
+
+         <ul id="exercicio4">
+            <li>João</li>
+            <li>Maria</li>
+            <li>Carlos</li>
+            <li>Julia</li>
+            <li>Lucas</li>
+         </ul>
+
+         <p>
+            Dica: Adicione um addEventListener ao botão / Pesquise sobre a
+            propriedade lastChild para pegar o ultimo elemento da lista e
+            removeChild() para remover o elemento
+         </p>
+      </div>
+   </body>
+</html>
