@@ -24,7 +24,6 @@ console.log(btn); // retornará o elemento do HTML confira no console do navegad
 /* Eu quero alterar o texto dentro do h1 que diz: <h1>Exemplo de manipulação de DOM</h1> então preciso capturar esse elemento de html também */
 const h1 = document.querySelector("#exemplo");
 /* Agora eu preciso adicionar um Evento de click para eu saber quando esse botão foi clicado */
-
 btn.addEventListener("click", () => {
    console.log("Botão clicado!"); // retornará no console do navegador
    /* Agora eu consigo alterar o innerText desse H1 quando o botão for clicado */
@@ -37,4 +36,6 @@ btn.addEventListener("click", () => {
 - Capturar o elemento do HTML e trazer para o JS
 - Adicionar um evento de click para esse elemento
 - Alterar o texto do elemento quando o evento for acionado
+
+Faça o restante dos exercicios nessa pagina, apenas vá escrevendo um embaixo do outro, eles não vão se misturar.
 */
