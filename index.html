@@ -2,13 +2,17 @@
 <html lang="en">
    <head>
       <!-- Lição de casa: pesquisa sobre o significa dessas tags META e o que mais daria para colocar aqui como TAG -->
+     <!-- daria para incluir nome e content para fins de SEO e para saber o autor da pagina tbm-->
       <!-- Limão de casa 2: Tentar trocar o favicon da pagina. -->
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Manipulação de DOM</title>
-      <!-- Linkar o seu arquivo de css -->
+      <link rel="icon" type="image/x-icon" href="favicon2.ico"> <!--OK!-->
       <link rel="stylesheet" href="./styles/style.css" />
-      <!-- Linkar seu arquivo js (pesquisar o porque de usar o atributo "defer" na tag de script) -->
+     
+   <!--Linkar seu arquivo js (pesquisar o porque de usar o atributo "defer" na tag de script)-->
+   <!--Por que usar defer? -->
+      <!--porque o carregamento do html não será interrompido quando o js executar scripts. eles só são executados depois que o carregamento é concluído-->
       <script src="./js/main.js" defer></script>
    </head>
    <body>
@@ -35,7 +39,8 @@
          </p>
 
          <div id="exercicio1">
-            <!-- Escreva o exercicio aqui -->
+            <button class="button_e1">Click the button</button>
+         </div>
          </div>
       </div>
 
@@ -54,13 +59,12 @@
          </p>
 
          <div id="exercicio2">
-            <!-- Escreva o exercicio aqui -->
+            <button class="button_e2">What's my name?</button>
          </div>
       </div>
 
       <div>
          <h1>Exercicio numero 3 - Iniciação de manipulação de DOM</h1>
-
          <p>
             Crie um botão que ao ser clicado altera o texto do elemento h3
             dentro da div "exercicio3" para "Marilia Mendonça é Rainha".
@@ -71,13 +75,21 @@
          </p>
 
          <div id="exercicio3">
-            <!-- Escreva o exercicio aqui -->
+            <button class="button_e3">Who?</button>
+
             <h3>Saudade de quem?</h3>
          </div>
       </div>
 
       <div>
+         <h1>Exercicio numero 4 - Iniciação de manipulação de DOM</h1>
+
          <p>Crie um botão que retira o ultima item da lista de nomes abaixo</p>
+         <button class="button_e4">Vaza perdedor</button>
+         <button class="button_e41">Seja bem-vindo +1</button>
+         <button class="button_e42">Tá na hora de dar tchau</button>
+         <button class="button_e43">Foi mal, errei o nome</button>
+         <button class="button_e44">Chegando mais 5</button>
 
          <ul id="exercicio4">
             <li>João</li>
@@ -114,6 +126,7 @@
          <a href="https://www.w3schools.com/jsref/prop_style_color.asp">Link para estudo</a>
 
          <div id="exercicio5">
+            <button class="button_e5">Troca a cor mané</button>
             <h3>Texto colorido</h3>
          </div>
    </body>

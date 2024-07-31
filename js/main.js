@@ -25,18 +25,110 @@ console.log(btn); // retornará o elemento do HTML confira no console do navegad
 const h1 = document.querySelector("#exemplo");
 /* Agora eu preciso adicionar um Evento de click para eu saber quando esse botão foi clicado */
 btn.addEventListener("click", () => {
-   console.log("Botão clicado!"); // retornará no console do navegador
-   /* Agora eu consigo alterar o innerText desse H1 quando o botão for clicado */
-   h1.innerText = "Texto alterado com sucesso! Manipular dom é facil demais.";
+  console.log("Botão clicado!"); // retornará no console do navegador
+  /* Agora eu consigo alterar o innerText desse H1 quando o botão for clicado */
+  h1.innerText = "Texto alterado com sucesso! Manipular dom é facil demais.";
 });
 
-/* Lição de casa: Pesquisar sobre os vários tipos de eventos que podem ser ser adicionados. Hoje vamos só trabalhar com o evento "click" */
+const btne1 = document.querySelector(".button_e1");
+console.log(btne1); // retornará o elemento do HTML confira no console do navegador (Inspecionar > console)
+btne1.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  alert("Botão foi clicado.");
+});
+//--------->OK
 
-/* resumo do exemplo:
-- Capturar o elemento do HTML e trazer para o JS
-- Adicionar um evento de click para esse elemento
-- Alterar o texto do elemento quando o evento for acionado
-- Não tenha medo de ir no HTML e adicionar ID e CLASS nos elementos para poder capturar eles no JS
+const btne2 = document.querySelector(".button_e2");
+console.log(btne2);
+btne2.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  document.createElement("h1");
+  h1.style.fontWeight = "bold";
+  h1.textContent = "Danyela Ramos";
+  const fatherElement = document.getElementById("exercicio2");
+  fatherElement.appendChild(h1);
+});
+//-------> OK
+//deu erro porque tava digitando Context
 
-Faça o restante dos exercicios nessa pagina, apenas vá escrevendo um embaixo do outro, eles não vão se misturar.
-*/
+const btne3 = document.querySelector(".button_e3");
+console.log(btne3);
+btne3.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const myEl3 = document.querySelector("#exercicio3 h3");
+  myEl3.textContent = "Marília Mendonça é rainha";
+});
+
+//-----> OK
+//deu erro só pq existe o #
+
+const btne4 = document.querySelector(".button_e4");
+console.log(btne4);
+btne4.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const list4 = document.getElementById("exercicio4");
+  const lastFromList = list4.lastChild;
+  list4.removeChild(lastFromList);
+});
+//----------> OK!
+
+const btne41 = document.querySelector(".button_e41");
+console.log(btne41);
+btne41.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const list41 = document.getElementById("exercicio4");
+  const newName = document.createElement("li");
+  newName.textContent = "Defante";
+  list41.appendChild(newName);
+});
+//----->OK!
+
+const btne42 = document.querySelector(".button_e42");
+console.log(btne42);
+btne42.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const list42 = document.getElementById("exercicio4");
+  list42.textContent = "";
+});
+//-----> OK!
+
+const btne43 = document.querySelector(".button_e43");
+console.log(btne43);
+btne43.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const list43 = document.getElementById("exercicio4");
+  const firstEl43 = list43.firstElementChild;
+  firstEl43.textContent = "Zé da Horta";
+});
+//------> OK!
+
+const btne44 = document.querySelector(".button_e44");
+console.log(btne44);
+btne44.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const band = [
+    "Aline Wirley",
+    "Fantine Thó",
+    "Lu Andrade",
+    "Karin Hils",
+    "Li Martins",
+  ];
+  const addedNewNames = band.map(function (member) {
+    const list44 = document.getElementById("exercicio4");
+    newName1 = document.createElement("li");
+    newName1.textContent = [member];
+    list44.appendChild(newName1);
+    return list44;
+  });
+  return addedNewNames;
+});
+////---->OK!
+
+const btne5 = document.querySelector(".button_e5");
+console.log(btne5);
+btne5.addEventListener("click", () => {
+  console.log("Botão clicado!");
+  const myEl5 = document.querySelector("#exercicio5 h3");
+  myEl5.style.color = "red";
+});
+//----------> OK!
